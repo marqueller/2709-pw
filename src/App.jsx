@@ -1,15 +1,15 @@
 import './App.css'
+import React from 'react';
+import Header  from './components/Header';
+import Footer from './components/Footer';
 
-import { Header } from './components/Header'
-import { Footer } from './components/Footer'
-
-function App() {
+export default function App(){
   return (
-    <>
-      <Header />
-      <Footer />
-    </>
-  )
+    <div>
+      <Header/>
+      <h1>Hello World!</h1>
+      <h2>I'm learning React JS</h2>
+      <Footer/>
+    </div>
+  );
 }
-
-export default App
