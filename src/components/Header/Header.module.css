@@ -5,7 +5,7 @@
     top: 0;
     display: flex;
     padding: 0 5rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
     align-items: center;
     justify-content: space-between;
     left: 0%;
@@ -18,8 +18,8 @@
 
 .header span {
     font-size: 2rem;
-    color: #b71c1c;
-    font-weight: 500;
+    color: #d10a0ad5;
+    font-weight: 800;
 }
 
 .header nav {
