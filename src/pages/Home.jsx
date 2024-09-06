@@ -4,7 +4,7 @@ import { FormUser } from "../components/FormUser"
 
 export const Home = () => {
     return (
-        <div>
+        <div className="background2">
             <Header />
             <h1>Page Home</h1>
             <Footer />

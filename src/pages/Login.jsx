@@ -1,9 +1,9 @@
 import { Header } from "../components/Header"
 import { Footer } from "../components/Footer"
-
+import './index.css'
 export const Login = () => {
     return (
-        <div>
+        <div className="background3">
             <Header />
             <h1>Page Login</h1>
             <Footer />

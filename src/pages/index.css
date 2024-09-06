@@ -1,0 +1,23 @@
+.background {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url(/src/assets/rayssa-leal-capa.webp)
+}
+
+.background2 {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url(/src/assets/skate.webp)
+}
+
+.background3 {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url(/src/assets/skate_luanoliveira.jpg)
+}

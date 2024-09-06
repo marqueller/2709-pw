@@ -3,7 +3,7 @@ import { Footer } from "../components/Footer"
 
 export const Assistir = () => {
     return (
-        <div>
+        <div className="background">
             <Header />
             <h1>Page Watch</h1>
             <Footer />
