@@ -1,0 +1,17 @@
+footer {
+    background-color: #000000;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.span-footer {
+    display: flex;
+    justify-content: center;
+    border-top: 4px solid #B71C0E;
+    color: white !important;
+    font-size: 18px;
+    padding: 20px 0px;
+    
+}
