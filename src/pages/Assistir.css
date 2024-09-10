@@ -1,0 +1,23 @@
+.background {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/public/black.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.background2 {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/public/blackclover.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.background3 {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/public/gokurosa.jpg');
+    background-size: cover;
+    background-position: center;
+}
