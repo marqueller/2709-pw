@@ -1,0 +1,23 @@
+.background1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/src/assets/joon.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.background2 {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/src/assets/kim.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.background3 {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/src/assets/nam.jpeg');
+    background-size: cover;
+    background-position: center;
+}
