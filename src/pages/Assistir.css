@@ -1,0 +1,25 @@
+
+
+.background {
+
+    background-image: url('/src/assets/game-of-thrones-1-1920x1080.webp');
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.background2 {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/src/assets/Justin-Bieber-vogue-credit-Mike-Rosenthal-1.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.background3 {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/src/assets/pexels-bess-hamiti-83687-36487.jpg');
+    background-size: cover;
+    background-position: center;
+}
