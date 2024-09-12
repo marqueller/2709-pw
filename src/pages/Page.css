@@ -3,3 +3,7 @@ img {
     height: 90vh;
     position: absolute;
 }
+
+.relativo {
+    position: relative;
+}

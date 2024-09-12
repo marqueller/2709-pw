@@ -10,6 +10,9 @@ export const Login = () => {
         <>
             <Header />
             <img src={Wallpaper} alt="Wallpaper" />
+            <div className="relativo">
+                <h1>Aqui voce vai fazer o login</h1>
+            </div>
             <Footer />
         </>
     )

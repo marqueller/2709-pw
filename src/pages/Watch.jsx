@@ -11,6 +11,9 @@ export const Watch = () => {
         <>
             <Header />
             <img src={Wallpaper} alt="Wallpaper" />
+            <div className="relativo">
+                <h1>Aqui você vai assistir os melhores filmes.</h1>
+            </div>
             <Footer />
         </>
     )
