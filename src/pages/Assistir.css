@@ -1,0 +1,25 @@
+
+
+.background {
+
+    background-image: url('/src/assets/cute-husky-pictures-3kbllqw6lwtx6kpx.jpg');
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.background2 {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/src/assets/wolf-8845341_1280.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.background3 {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/src/assets/wolf-8800549_1280.webp');
+    background-size: cover;
+    background-position: center;
+}
