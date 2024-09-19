@@ -4,7 +4,7 @@ export const Footer = () => {
     return (
         <div>
             <footer className={styles.footer}>
-                <h2>CedupFlix &copy; Desenvolvido por Raíssa Vitória</h2>
+                <h2>CedupFlix &copy; Desenvolvido por Morgana Miranda</h2>
             </footer>
         </div>
     );
