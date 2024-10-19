@@ -1,25 +1,20 @@
-const validForm = function(event){
-    var inputName = document.querySelector('#name');
-    var inputPhone = document.querySelector('#phone');
-    var inputEmail = document.querySelector('#email')
-    
-    if(inputName.value === ""){
-        alert("Preencha seu Nome");
-        inputName.focus();
-        return false;
-    }
+document.addEventListener('DOMContentLoaded', function () {
+    const links = document.querySelectorAll('.nav-link'); // Seleciona todos os links da navegação
+    const sections = document.querySelectorAll('.secao'); // Seleciona todas as seções
 
-        if(inputPhone.value === ""){
-            alert("Preencha seu telefone");
-            inputName.focus();
-            return false;
-        }
+    links.forEach(link => {
+        link.addEventListener('click', function (event) {
+            event.preventDefault(); // Evita o comportamento padrão do link
 
-            if(inputEmail.value === ""){
-                alert("Preencha seu Email");
-                inputName.focus();
-                return false;
-    }
+            // Esconde todas as seções
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
 
-    alert("Mensagem Enviada");
-}
+            // Mostra apenas a seção correspondente ao link clicado
+            const targetId = this.getAttribute('href'); // Pega o valor do href (por exemplo, #secao1)
+            const targetSection = document.querySelector(targetId); // Seleciona a seção correspondente
+            targetSection.style.display = 'block';
+        });
+    });
+});

@@ -63,24 +63,27 @@ body{
       width: 90%;
       margin: 0 auto;
   }
-
+  .carousel{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+  }
+  #carouselExampleAutoplaying{
+    width: 80vw;
+    box-shadow: 1px 1px 100px rgba(0, 0, 0, 0.733);
+  }
   #header{
       display: flex;
       top:0;
       left: 0;
       z-index: 100;
       width: 100%;
-
       margin-bottom: 2rem;
       background: var(--white);
       border-bottom: 1px solid var(--color-background);
-  }
-
-  nav.container{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-  }
+      box-shadow: 1px 1px 10px black;
+    }
 
   nav .left{
     display: flex;
@@ -102,9 +105,7 @@ body{
 
   #services .container{
       display: flex;
-      flex-direction: column;
       align-items: center;
-      gap: 2rem;
   }
   #services .card{
       display: flex;
@@ -143,7 +144,6 @@ body{
   }
 
   /* PARTE DO QUEM SOMOS */
-
   #about .text{
       display: flex;
       flex-direction: column;
@@ -198,4 +198,48 @@ body{
     border-radius: 0.31rem;
     height: 2rem;
     background: rgba(30, 206, 131, 0.1);
+}
+.grid #navBar{
+    display: flex;
+}
+.menu {
+    display: flex;
+    padding: 0px 20px;
+}
+.menu ul li a{
+    color: #545454;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.menu ul li{
+    padding: 10px;
+    border-radius: 15px;
+}
+.menu ul li a:hover {
+    text-decoration: underline;
+}
+.containerFormulario{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+}
+.containerFormulario form{
+    width: 60%;
+}
+.secao {
+    display: none; /* Esconder todas as seções por padrão */
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+.secao:target {
+    display: block; /* Exibir a seção ativa */
+}
+#secao1 {
+    display: block; /* Mostrar a primeira seção ao carregar */
 }
