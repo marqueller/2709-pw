@@ -11,26 +11,27 @@ import MenuMobile from "../componentes/MenuMobile";
 import data from "@/message/data.json";
 
 const Header = () => {
-    const [isFixed, setIsFixed] = useState(false);
+    // const [isFixed, setIsFixed] = useState(false);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.scrollY > 15) {
-                setIsFixed(true);
-            } else {
-                setIsFixed(false);
-            }
-        };
+    // useEffect(() => {
+    //     const handleScroll = () => {
+    //         if (window.scrollY > 15) {
+    //             setIsFixed(true);
+    //         } else {
+    //             setIsFixed(false);
+    //         }
+    //     };
 
-        window.addEventListener('scroll', handleScroll);
+    //     window.addEventListener('scroll', handleScroll);
 
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
+    //     return () => {
+    //         window.removeEventListener('scroll', handleScroll);
+    //     };
+    // }, []);
 
     return (
-        <header className={isFixed ? 'menu-fixed' : 'bg-white transition-all duration-1000 ease-in-out py-8 border-b'}>
+        // isFixed ? 'menu-fixed' : 'bg-white transition-all duration-1000 ease-in-out py-8 border-b
+        <header className="">
             <nav>
                 <div className="container mx-auto flex items-center justify-between">
                     <div>

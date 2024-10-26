@@ -1,16 +1,34 @@
 {
     "InfoNavLink": [
         {
-            "href": "/",
+            "href": "/pages/services",
             "name": "Serviços"
         },
         {
-            "href": "/",
+            "href": "/pages/who-we-are",
             "name": "Quem Somos"
         },
         {
-            "href": "/",
+            "href": "/pages/contact",
             "name": "Contato"
+        }
+    ],
+    "InfoSectionServices": [
+        {
+            "title": "CASTRAÇÃO",
+            "img": "/img/img-castracao.png",
+            "alt": "string"
+        },
+        {
+            "title": "BANHO E TOSA",
+            "img": "/img/img-shampoo.png",
+            "alt": "string",
+            "caption": "Nós oferecemos um cuidado cheio de carinho e amor"
+        },
+        {
+            "title": "PRODUTOS",
+            "img": "/img/img-produtos.png",
+            "alt": "string"
         }
     ]
 }

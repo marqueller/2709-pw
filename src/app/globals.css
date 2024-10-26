@@ -79,7 +79,7 @@ body {
   }
 }
 
-.menu-fixed {
+/* .menu-fixed {
   width: 100%;
   position: fixed;
   z-index: 999;
@@ -88,11 +88,11 @@ body {
   transition: all ease-in-out .7s;
   padding: 10px;  
 }
-/* 
+
+
 .menu-fixed .logo {
   width: 50px !important;
   height: 50px !important;
-  overflow-x: hidden !important;
-} */
+}  */
 
 
