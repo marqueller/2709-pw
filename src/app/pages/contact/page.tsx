@@ -1,9 +1,11 @@
-import Header from "@/app/template/Header";
+import SectionAddress from "./template/SectionAddress";
+import SectionContact from "@/app/template/SectionContact";
 
 export default function Contact() {
     return (
-        <div>
-            <Header />
-        </div>
+        <main className="flex-grow">
+            <SectionAddress />
+            <SectionContact />
+        </main>
     )
 }

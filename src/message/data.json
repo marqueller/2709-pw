@@ -17,18 +17,112 @@
         {
             "title": "CASTRAÇÃO",
             "img": "/img/img-castracao.png",
-            "alt": "string"
+            "alt": "string",
+            "caption": "Nós oferecemos um cuidado cheio de carinho e amor",
+            "index": 1
         },
         {
             "title": "BANHO E TOSA",
             "img": "/img/img-shampoo.png",
             "alt": "string",
-            "caption": "Nós oferecemos um cuidado cheio de carinho e amor"
+            "caption": "Banho e tosa com carinho, para deixar seu pet limpo e feliz",
+            "index": 2
         },
         {
             "title": "PRODUTOS",
             "img": "/img/img-produtos.png",
-            "alt": "string"
+            "alt": "string",
+            "caption": "Produtos selecionados com amor para o bem-estar do seu pet!",
+            "index": 3
+        },
+        {
+            "title": "BANHO E TOSA",
+            "img": "/img/img-shampoo.png",
+            "alt": "string",
+            "caption": "Banho e tosa com carinho, para deixar seu pet limpo e feliz",
+            "index": 4
+        },
+        {
+            "title": "PRODUTOS",
+            "img": "/img/img-produtos.png",
+            "alt": "string",
+            "caption": "Produtos selecionados com amor para o bem-estar do seu pet!",
+            "index": 5
+        },
+        {
+            "title": "CASTRAÇÃO",
+            "img": "/img/img-castracao.png",
+            "alt": "string",
+            "caption": "Nós oferecemos um cuidado cheio de carinho e amor",
+            "index": 6
+        }
+    ],
+    "InfoSectionContact": [
+        {
+            "src": "/icon/icon-account.png",
+            "alt": "Name Icon",
+            "type": "name",
+            "placeholder": "Nome completo"
+        },
+        {
+            "src": "/icon/icon-account.png",
+            "alt": "Email Icon",
+            "type": "e-mail",
+            "placeholder": "Endereço de e-mail"
+        },
+        {
+            "src": "/icon/icon-account.png",
+            "alt": "Phone Icon",
+            "type": "phone",
+            "placeholder": "Telefone"
+        }
+    ],
+    "InfoSectionContactMap": [
+        {
+            "src": "/icon/icon-instagram-green.png",
+            "alt": "Icon Instagram",
+            "href": "/",
+            "width": 40,
+            "height": 40
+        },
+        {
+            "src": "/icon/icon-facebook-green.png",
+            "alt": "Icon Facebook",
+            "href": "/",
+            "width": 40,
+            "height": 40
+        },
+        {
+            "src": "/icon/icon-youtube-green.png",
+            "alt": "Icon YouTube",
+            "href": "/",
+            "width": 48,
+            "height": 40
+        }
+    ],
+    "InfoFooter": [
+        {
+            "src": "/icon/icon-instagram-white.png",
+            "alt": "Icon Instagram",
+            "href": "/",
+            "width": 40,
+            "height": 40
+        },
+        {
+            "src": "/icon/icon-facebook-white.png",
+            "alt": "Icon Facebook",
+            "href": "/",
+            "width": 40,
+            "height": 40
+        },
+        {
+            "src": "/icon/icon-youtube-white.png",
+            "alt": "Icon YouTube",
+            "href": "/",
+            "width": 48,
+            "height": 40
         }
     ]
 }
+
+

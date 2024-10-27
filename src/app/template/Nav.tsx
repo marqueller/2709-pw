@@ -1,55 +1,43 @@
-'use client'
-import { useEffect, useState } from 'react';
+'use client';
 
 import Image from "next/image";
 import Link from "next/link";
-
 import Logo from "../../../public/img/logo.png";
-import NavLink from "../componentes/NavLink";
 import MenuMobile from "../componentes/MenuMobile";
-
 import data from "@/message/data.json";
+import { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 const Header = () => {
-    // const [isFixed, setIsFixed] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
+    const pathname = usePathname();
 
-    // useEffect(() => {
-    //     const handleScroll = () => {
-    //         if (window.scrollY > 15) {
-    //             setIsFixed(true);
-    //         } else {
-    //             setIsFixed(false);
-    //         }
-    //     };
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 10);
+        };
 
-    //     window.addEventListener('scroll', handleScroll);
-
-    //     return () => {
-    //         window.removeEventListener('scroll', handleScroll);
-    //     };
-    // }, []);
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     return (
-        // isFixed ? 'menu-fixed' : 'bg-white transition-all duration-1000 ease-in-out py-8 border-b
-        <header className="">
+        <header className={`transition-all ease-in-out duration-300 ${isScrolled ? 'menu-fixed' : 'bg-zinc-100 border-b-2 py-6'}`}>
             <nav>
                 <div className="container mx-auto flex items-center justify-between">
                     <div>
                         <Link href="/" rel="noreferrer">
-                            <Image
-                                src={Logo}
-                                alt="Logo Petshop"
-                                className="w-[150px] lg:w-[180px] lg:h-[70px] logo"
-                            />
+                            <Image src={Logo} alt="Logo Petshop" className="logo" />
                         </Link>
                     </div>
-                    <div className="hidden lg:flex gap-6 duration-300">
+                    <div className="hidden lg:flex gap-6">
                         {data.InfoNavLink.map((info, index) => (
-                            <NavLink
-                                key={index}
-                                href={info.href}
-                                name={info.name}
-                            />
+                            <Link key={index} href={info.href} className={`relative ${isScrolled ? 'text-[18px]' : 'text-[20px]'} 
+                                ${pathname === info.href ? 'border-b-4 border-primary-color ' : 'border-b-2 border-transparent'} hover:border-b-4 hover:border-primary-color transition`}>
+                                {info.name}
+                            </Link>
                         ))}
                     </div>
                     <div className="flex lg:hidden">

@@ -1,9 +1,10 @@
-import Header from "@/app/template/Header";
+import SectionServices from "./template/SectionServices";
+
 
 export default function Services() {
   return (
     <div>
-      <Header />
+      <SectionServices />
     </div>
   )
 }

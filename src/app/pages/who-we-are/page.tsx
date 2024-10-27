@@ -1,9 +1,9 @@
-import Header from "@/app/template/Header";
+import SectionPageWhoAre from "./template/SectionPageWhoAre";
 
 export default function WhoAre() {
   return (
-    <div>
-      <Header />
-    </div>
+    <main className="flex-grow">
+      <SectionPageWhoAre />
+    </main>
   )
 }
