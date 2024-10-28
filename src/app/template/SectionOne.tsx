@@ -31,12 +31,10 @@ export default function SectionOne() {
                         <Image
                             data-aos="flip-left"
                             data-aos-offset="200"
-                            // data-aos-delay="350"
                             data-aos-duration="1000"
                             data-aos-easing="ease"
                             data-aos-mirror="true"
                             data-aos-once="false"
-                            // data-aos-anchor-placement="top"
                             src={Dog}
                             alt="Img Dog"
                             className="w-auto h-auto lg:w-3/4"
