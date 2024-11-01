@@ -1,0 +1,199 @@
+.carousel-inner img {
+    width: 100vw;
+    height: 829px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.nav-link {
+    color: black !important;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-bottom: 3px solid transparent;
+    transition: all ease-in-out .3s;
+}
+
+.nav-link:hover {
+    color: black !important;
+    font-weight: 600;
+    border-bottom: 3px solid brown;
+}
+
+.contato {
+    #contact h2 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    #contact .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    #contact .form .input {
+        width: 100%;
+        border: 2px solid var(--color-primary);
+        border-radius: 0.31rem;
+        height: 2rem;
+        background: rgba(30, 206, 131, 0.1);
+    }
+
+    .grid #navBar {
+        display: flex;
+    }
+
+    .menu {
+        display: flex;
+        padding: 0px 20px;
+    }
+
+    .menu ul li a {
+        color: #545454;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+        font-weight: 700;
+        font-size: 1.1rem;
+    }
+
+    .menu ul li {
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    .menu ul li a:hover {
+        text-decoration: underline;
+    }
+
+    .contato {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 70vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contato form {
+        width: 60%;
+    }
+}
+
+#contato {
+    width: 50%;
+}
+
+.contatoCentralizar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70vh;
+}
+
+
+.section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h4 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.card .image {
+    margin: 0 auto 15px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card p {
+    font-size: 1em;
+    color: #666;
+}
+
+.card-equal {
+    flex: 1;
+}
+
+.card-diff {
+    flex: 1.5;
+}
+
+.sobre {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.quem {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.6;
+}
+
+.titulo {
+    font-size: 1.7em;
+    color: #545454;
+    text-align: center;
+    margin: 10px 0;
+    text-transform: uppercase;
+
+}
+
+
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+        /* Colunas únicas em telas pequenas */
+    }
+}

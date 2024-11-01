@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: aquamarine;
+}
+
+.navbar {
+    margin-bottom: 20px;
+    margin-right: 200rem;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100px;
+
+    /* Defina uma altura padrão para as imagens do carrossel */
+
+}
+
+.h3 {
+    text-align: center;
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    height: 100vh;
+    /* Altura total da tela */
+    margin: 0;
+
+}
