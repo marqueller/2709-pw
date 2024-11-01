@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Quem Somos - PetShop Hogwarts</title>
+
+    <style>
+        /* Estilos do menu hamburguer */
+        #menuIcon {
+            font-size: 24px;
+            cursor: pointer;
+            padding: 10px;
+            position: fixed;
+            top: 10px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        #hiddenMenu {
+            display: none;
+            position: fixed;
+            top: 50px;
+            right: 20px;
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        #hiddenMenu.show {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        #hiddenMenu a {
+            color: #333;
+            text-decoration: none;
+            display: block;
+            padding: 5px 0;
+        }
+
+        #hiddenMenu a:hover {
+            color: #C15B20;
+        }
+
+        .contact-info {
+            position: relative;
+            z-index: 1;
+            /* Para garantir que fique acima da barra */
+            margin-top: -40px;
+            /* Para levantar os ícones sobre a barra */
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            /* Espaçamento entre os itens */
+            background-color: transparent;
+            /* Fundo transparente */
+            color: white;
+            /* Cor do texto */
+            font-weight: bold;
+            /* Negrito */
+        }
+
+        .contact-info img {
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+        }
+
+        .divider {
+            width: 100%;
+            height: 2px;
+            /* Altura da barra */
+            background-color: #C15B20;
+            /* Cor da barra laranja */
+            margin: 20px 0;
+            /* Espaçamento em cima e embaixo */
+        }
+
+        .orange-bar {
+            background-color: #C15B20;
+            /* Cor laranja */
+            height: 50px;
+            /* Altura da barra */
+            position: relative;
+            z-index: 0;
+            /* Para ficar abaixo dos ícones */
+        }
+
+        .title-divider {
+            width: 50px;
+            /* Largura da linha abaixo do título */
+            height: 3px;
+            /* Altura da linha */
+            background-color: #C15B20;
+            /* Cor laranja */
+            margin: 10px auto;
+            /* Centraliza a linha */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="menuIcon" onclick="toggleMenu()">&#9776;</div>
+    <div id="hiddenMenu">
+        <a href="index.html#home">Início</a>
+        <a href="index.html#services">Serviços</a>
+        <a href="sobre.html">Quem Somos</a>
+        <a href="javascript:void(0);" onclick="scrollToContact()">Contato</a>
+    </div>
+
+    <header id="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="logo.png" alt="Logo Hogwarts PetShop" />
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section" id="about">
+            <div class="container">
+                <h2 class="title text-center">Quem Somos</h2>
+                <div class="title-divider"></div> <!-- Linha abaixo do título -->
+                <br>
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p>Em Hogwarts PetShop, amamos pets!<br><br>Oferecemos serviços de qualidade e um ambiente
+                            acolhedor para seus bichinhos.</p>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <img src="gato.png" class="img-fluid" alt="Imagem de um gato">
+                    </div>
+                </div>
+                <br>
+
+                <!-- Barra laranja -->
+                <div class="orange-bar"></div>
+
+                <!-- Informações de Contato -->
+                <div class="contact-info">
+                    <div>
+                        <img src="icon-insta.png" alt="Instagram"> @hogwarts
+                    </div>
+                    <div>
+                        <img src="icon-phone.png" alt="Telefone"> +1 123 456
+                    </div>
+                    <div>
+                        <img src="icon-wpp.png" alt="WhatsApp"> +1 233 321 111
+                    </div>
+                </div>
+
+                <!-- Barra horizontal -->
+                <div class="divider"></div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("hiddenMenu");
+            if (menu.classList.contains("show")) {
+                menu.classList.remove("show");
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+                setTimeout(() => {
+                    menu.classList.add("show");
+                }, 10);
+            }
+        }
+
+        function scrollToContact() {
+            window.location.href = "index.html#contact";
+            setTimeout(() => {
+                const element = document.getElementById('contact');
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
+            }, 100);
+        }
+    </script>
+</body>
+
+</html>
