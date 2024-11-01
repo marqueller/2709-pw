@@ -1,0 +1,134 @@
+ /* Geral */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+header {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    color: black
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Cards de serviços */
+.servicos {
+    display: flex;
+    gap: 1rem;
+    padding: 2rem;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 40px;
+    width: 250px;
+    text-align: center;
+}
+.cardverde {
+    background-color: #0fbe6c;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 40px;
+    width: 250px;
+    text-align: center;
+}
+
+.btn-ver-servicos {
+    background-color: #0fbe6c; 
+    color: #fff; 
+    padding: 0.75rem 1.5rem; 
+    border: none; 
+    border-radius: 50px; 
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.container-imagemdog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container-botao {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+}
+
+/* Quem somos */
+.quem-somos {
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Formulário de Contato */
+.contato {
+    padding: 2rem;
+}
+
+.contato form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+
+}
+
+.contato input, .contato textarea {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contato button {
+    padding: 0.5rem;
+    border: none;
+    background-color: #0fbe6c;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
