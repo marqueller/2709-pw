@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+    <title>Universe PetShop</title>
+</head>
+
+<body>
+
+    <header id="header container">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../quem_somos.html">Quem somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/servico.html">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        </nav>
+    </header>
+
+    <main>
+        <section class="Carousel1">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/img3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section class="section" id="home">
+            <div class="container grid ">
+                <div class="text grid">
+                    <h2 class="title">UNIVERSE PETSHOP</h2>
+
+                    <p>O universo petshop é um espaço vibrante e acolhedor
+                    dedicado ao bem-estar e à felicidade dos animais de estimação. 
+                    Nele, encontramos uma ampla variedade de produtos e serviços
+                    que atendem às necessidades dos pets, desde ração e acessórios
+                    até serviços de banho e tosa. Além de oferecer produtos de qualidade,
+                    os petshops são locais de interação, onde tutores podem buscar conselhos
+                    sobre cuidados, saúde e comportamento dos animais.</p>
+
+                    <button class="button">Ver serviços</button>
+                </div>
+                <div class="image grid">
+                    <img src="assets/cachorro.png" alt="Imagem do Cachorro">
+                </div>
+            </div>
+        </section>
+
+        <section class="section d-flex" id="services">
+            <div class="container grid">
+                <div class="cards grid">
+                    <div class="card left card-equal">
+                        <h4>CASTRAÇÃO</h4>
+                        <div class="image grid">
+                            <img src="assets/castracao.png" alt="Coração com pata dentro">
+                        </div>
+                    </div>
+
+                    <div class="card card-diff">
+                        <h4>BANHO E TOSA</h4>
+                        <div class="image">
+                            <img src="assets/shampoo.png" alt="shampoo para Pet">
+                        </div>
+                        <p> Nós oferecemos um cuidado cheio de carinho
+                            e amor</p>
+                    </div>
+
+                    <div class="card right card-equal">
+                        <h4>PRODUTOS</h4>
+                        <div class="image">
+                            <img src="assets/produtos.png" alt="produtos">
+                        </div>
+                    </div>
+                    <br>
+
+
+                </div>
+            </div>
+        </section>
+        <section id="about">
+
+            <div class="container grid ">
+                <div class="text">
+                    <h2 class="title">QUEM SOMOS</h2>
+                    <p>"Somos um pet shop dedicado a proporcionar bem-estar, cuidado e alegria
+                        para os animais e seus tutores. Acreditamos que nossos pets são parte
+                        da família, por isso oferecemos produtos de qualidade, serviços especializados
+                        e atendimento atencioso. Nossa missão é garantir que cada bichinho receba o que
+                        há de melhor, com segurança e carinho em cada detalhe, seja para cuidados diários,
+                        saúde, ou momentos de diversão!"</p>
+                </div>
+                <div class="image">
+                    <div class="img-gato">
+                        <img src="assets/gato.png" alt="Imagem de um gato">
+                    </div>
+                    <button class="button">Ver serviço</button>
+                </div>
+            </div>
+
+        </section>
+        <section class="section" id="contact">
+
+            <div class="container grid centralizar border-pet">
+                <div class="content">
+                    <h2 class="title">ENTRE EM CONTATO</h2>
+                    <form class="form" onsubmit="return validForm()">
+                        <label for="name">NOME</label>
+                        <input type="text" class="input" id="name">
+
+                        <label for="phone">Telefone</label>
+                        <input type="text" class="input" id="name">
+
+                        <label for="email">Email</label>
+                        <input type="email" class="input" id="email">
+
+                        <button class="button">Enviar</button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="assets/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

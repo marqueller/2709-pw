@@ -1,0 +1,17 @@
+// Adicione esse código ao seu arquivo index.js
+
+function validForm() {
+    // Valide os campos do formulário
+    const name = document.getElementById('name').value;
+    const phone = document.getElementById('phone').value;
+    const email = document.getElementById('email').value;
+
+    if (name === '' || phone === '' || email === '') {
+        alert('Preencha todos os campos!');
+        return false;
+    }
+
+    // Enviar formulário
+    // Implemente sua lógica de envio aqui
+    return true;
+}
