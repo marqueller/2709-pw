@@ -11,12 +11,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@prisma/client": "^5.20.0",
+    "@prisma/client": "^5.22.0",
     "express": "^4.21.0",
     "mongodb": "^6.9.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.6",
-    "prisma": "^5.20.0"
+    "prisma": "^5.22.0"
   }
 }
